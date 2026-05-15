@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudeep Pandit | Portfolio</title>
+    
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <canvas id="bg-canvas"></canvas>
+
+    <div class="overlay">
+        <div class="glass-card">
+            <div class="icon-wrapper">
+                <div class="icon-hex">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                    </svg>
+                </div>
+                <div class="icon-dot-ring"></div>
+                <div class="icon-dot-ring"></div>
+            </div>
+
+            <p class="title-sub">We're Building Something Global</p>
+            <h1 class="title-main" id="titleText">Under Construction</h1>
+            <div class="lang-indicator">
+                <span class="lang-dot"></span>
+                <span id="langLabel">English</span>
+            </div>
+
+            <div class="progress-section">
+                <div class="progress-label">
+                    <span>Development Progress</span>
+                    <span id="progressPercent">67%</span>
+                </div>
+                <div class="progress-track">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+            </div>
+
+            <div class="email-group">
+                <input type="email" class="email-input" placeholder="Enter your email for updates" aria-label="Email address">
+                <button class="btn-notify" id="notifyBtn">Notify Me</button>
+            </div>
+        </div>
+
+        <!-- Copyright & Contact (replaces social icons) -->
+        <div class="footer-info">
+            <span>&copy; 2025 Sudeep Pandit. All rights reserved.</span>
+            <span>
+                Contact: 
+                <a href="mailto:info@sudeeppandit.com.np">info@sudeeppandit.com.np</a> 
+                | 
+                <a href="mailto:support@sudeeppandit.com.np">support@sudeeppandit.com.np</a>
+            </span>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.157.0/build/three.min.js"></script>
+    
+<script src="script.js"></script>
+
+
+</body>
+</html>
