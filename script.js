@@ -1,4 +1,4 @@
-(function() {
+        (function() {
             const canvas = document.getElementById('bg-canvas');
             const titleText = document.getElementById('titleText');
             const langLabel = document.getElementById('langLabel');
@@ -229,11 +229,11 @@
             const fParticles = new THREE.Points(fGeom, fMat);
             scene.add(fParticles);
 
-            // Mouse
+            // Mouse / Touch
             const mouse = { x:0, y:0 };
             const target = { x:0, y:0 };
             window.addEventListener('mousemove', e => { target.x = (e.clientX/window.innerWidth)*2-1; target.y = -(e.clientY/window.innerHeight)*2+1; });
-            window.addEventListener('touchmove', e => { if(e.touches.length>0){ target.x = (e.touches[0].clientX/window.innerWidth)*2-1; target.y = -(e.touches[0].clientY/window.innerHeight)*2+1; } }, {passive:true});
+            window.addEventListener('touchmove', e => { if(e.touches.length>0){ target.x = (e.touches[0].clientX/window.innerWidth)*2-1; target.y = -(e.touches[0].clientY/window.innerHeight)*2+1; } }, {passive: true});
 
             const clock = new THREE.Clock();
             function animate(ts) {
@@ -276,11 +276,3 @@
             requestAnimationFrame(animate);
             setTimeout(() => { progressFill.style.width = '67%'; progressPercent.textContent = '67%'; }, 300);
         })();
-
-          // ---------- SECURITY: Disable right-click and devtools shortcuts ----------
-  document.addEventListener('contextmenu', (e) => e.preventDefault());
-  document.addEventListener('keydown', (e) => {
-    if (e.key === "F12") e.preventDefault();
-    if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C')) e.preventDefault();
-    if (e.ctrlKey && e.key === 'u') e.preventDefault();
-  });
